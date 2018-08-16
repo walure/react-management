@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Nav.scss'
 
 export default class Nav extends Component {
@@ -11,24 +11,24 @@ export default class Nav extends Component {
     return (
       <ul className="navBar">
         <li>
-          <Link
-            to="/"
-            className="aaa"
-            acitveClassName="bbb"
-            activeStyle={{ color: 'green' }}
-            onclick={this.handle}
-          >
+          <NavLink exact to="/" activeClassName="active" onclick={this.handle}>
             首页
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/page1">Page1</Link>
+          <NavLink exact to="/page1" acitveClassName="active">
+            Page1
+          </NavLink>
         </li>
         <li>
-          <Link to="/counter">Counter</Link>
+          <NavLink to="/counter" acitveClassName="active">
+            Counter
+          </NavLink>
         </li>
         <li>
-          <Link to="/userinfo">UserInfo</Link>
+          <NavLink to="/userinfo" acitveClassName="active">
+            UserInfo
+          </NavLink>
         </li>
         {this.props.children}
       </ul>

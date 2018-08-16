@@ -4,8 +4,9 @@
   float: left;
   li {
     list-style: none;
-    .activeRoute {
-      color: red;
-    }
+  }
+  .active,
+  .activeRoute {
+    color: red;
   }
 }

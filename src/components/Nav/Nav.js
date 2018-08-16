@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, BrowserRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './Nav.scss'
 
 export default class Nav extends Component {
@@ -7,10 +7,17 @@ export default class Nav extends Component {
     console.log(e)
   }
   render() {
+    console.log(this)
     return (
       <ul className="navBar">
         <li>
-          <Link to="/" onclick={this.handle}>
+          <Link
+            to="/"
+            className="aaa"
+            acitveClassName="bbb"
+            activeStyle={{ color: 'green' }}
+            onclick={this.handle}
+          >
             首页
           </Link>
         </li>

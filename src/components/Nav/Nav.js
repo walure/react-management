@@ -7,7 +7,7 @@ export default class Nav extends Component {
     console.log(e)
   }
   render() {
-    console.log(this)
+    // console.log(this)
     return (
       <ul className="navBar">
         <li>

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev-build": "webpack --config webpack.dev.config.js",
-    "start": "webpack-dev-server --config webpack.dev.config.js --color --progress ",
+    "start": "webpack-dev-server --config webpack.dev.config.js --color --progress",
     "build": "webpack --config webpack.config.js"
   },
   "keywords": [
@@ -44,10 +44,10 @@
     "url-loader": "^0.5.9",
     "webpack": "1.x.x",
     "webpack-dev-server": "1.x.x",
-    "webpack-hot-middleware": "^2.22.3",
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
+    "amazeui-react": "^1.2.3",
     "axios": "^0.16.2",
     "es3ify-webpack-plugin": "^0.0.1",
     "es5-shim": "^4.5.9",

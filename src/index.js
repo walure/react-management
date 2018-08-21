@@ -17,12 +17,12 @@ const render = Cont => {
 
 render(App)
 
-if (module.hot) {
-  module.hot.accept(App, err => {
-    if (err) {
-      console.log(err)
-    }
-    ReactDOM.unmountComponentAtNode(mountNode)
-    render(App)
-  })
-}
+// if (module.hot) {
+//   module.hot.accept(App, err => {
+//     if (err) {
+//       console.log(err)
+//     }
+//     ReactDOM.unmountComponentAtNode(mountNode)
+//     render(App)
+//   })
+// }
